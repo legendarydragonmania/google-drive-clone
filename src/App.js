@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './App.css'
 import Header from './components/header/index'
+import Sidebar from './components/sidebar/index'
 
 function App() {
   // authentication
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className='App'>
       <Header userPhoto={user.photoURL} />
+      <Sidebar />
       {/* authenticated
         sidebar
         files view
